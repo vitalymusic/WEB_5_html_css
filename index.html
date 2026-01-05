@@ -91,7 +91,7 @@
     <table border="1" width="50%" style="background-color: white;">
         <thead height="200px" style="background-color: aliceblue;">
             <tr>
-                <td width="10%" >N.p.k</td>
+                <td width="10%">N.p.k</td>
                 <td width="50%">Vārds, uzvārds</td>
                 <td width="">Epasts</td>
                 <td width="">Tālrunis</td>
@@ -120,57 +120,81 @@
         </tfoot>
 
     </table>
-    
+
     <h2>Formas</h2>
-    <form action="">
-        <div>
-            <label>Jūsu vārds: 
-                <input type="text" name="name" placeholder="Piem. Jānis">
-            </label>
-         </div>   
-        <div>
-            <label>Jūsu epasts: 
-                <input type="email" name="email">
-            </label>
-         </div>   
-        <div>
-            <label>Jūsu dzimšanas datums: 
-                <input type="date" name="date">
-            </label>
-         </div>   
-        <div>
-            <label>Jūsu miļākā krāsa: 
-                <input type="color" name="fav_color">
-            </label>
-         </div>   
-        <div>
-            <label>Jūsu foto: 
-                <input type="file" name="avatar">
-            </label>
-         </div> 
-        <div>
-            <label>
-                <input type="checkbox" name="agree" value="true">
-                 Piekrītu lapas noteikumiem 
-            </label>
-         </div> 
-        <div>
-            <h3>Cik daudz laika jūs pavadāt pie datora dienā?</h3>
+    <form action="" style="width:50%;margin: auto">
+        <fieldset >
+            <legend>Pamatdati par lietotāju</legend>
 
-            <label>
-                <input type="radio" name="jaut1" value="līdz 1 stundai">
-                 līdz 1 stundai 
-            </label><br>
-            <label>
-                <input type="radio" name="jaut1" value="2-3 stundas">
-                 2-3 stundas
-            </label><br>
-            <label>
-                <input type="radio" name="jaut1" value="vairāk par 3 stundām">
-                 vairāk par 3 stundām
-            </label><br>
+            <div>
+                <label>Jūsu vārds:
+                    <input type="text" name="name" placeholder="Piem. Jānis">
+                </label>
+            </div>
+            <div>
+                <label>Jūsu epasts:
+                    <input type="email" name="email">
+                </label>
+            </div>
+            <div>
+                <label>Jūsu dzimšanas datums:
+                    <input type="date" name="date">
+                </label>
+            </div>
+            <div>
+                <label>Jūsu miļākā krāsa:
+                    <input type="color" name="fav_color">
+                </label>
+            </div>
+            <div>
+                <label>Jūsu foto:
+                    <input type="file" name="avatar">
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" name="agree" value="true">
+                    Piekrītu lapas noteikumiem
+                </label>
+            </div>
+            <div>
+                <h3>Cik daudz laika jūs pavadāt pie datora dienā?</h3>
 
-         </div> 
+                <label>
+                    <input type="radio" name="jaut1" value="līdz 1 stundai">
+                    līdz 1 stundai
+                </label><br>
+                <label>
+                    <input type="radio" name="jaut1" value="2-3 stundas">
+                    2-3 stundas
+                </label><br>
+                <label>
+                    <input type="radio" name="jaut1" value="vairāk par 3 stundām">
+                    vairāk par 3 stundām
+                </label><br>
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Paroles izveide</legend>
+
+            <div>
+                <label>
+                    Ievadiet savu jauno paroli
+                    <input type="password" name="password" id="password">
+                </label>
+            </div>
+            <div>
+                <label>
+                   Atkārtojiet savu jauno paroli
+                    <input type="password" name="password_repeat" id="password_repeat">
+                </label>
+            </div>
+
+        </fieldset>
+
+
 
 
     </form>
