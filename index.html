@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+
     <title>Mācos HTML</title>
 </head>
 
@@ -122,18 +124,18 @@
     </table>
 
     <h2>Formas</h2>
-    <form action="" style="width:50%;margin: auto">
-        <fieldset >
+    <form action="https://formtester.goodbytes.be/post.php" method="post" style="width:50%;margin: auto">
+        <fieldset>
             <legend>Pamatdati par lietotāju</legend>
 
             <div>
                 <label>Jūsu vārds:
-                    <input type="text" name="name" placeholder="Piem. Jānis">
+                    <input type="text" name="name" placeholder="Piem. Jānis" maxlength="10" minlength="3">
                 </label>
             </div>
             <div>
                 <label>Jūsu epasts:
-                    <input type="email" name="email">
+                    <input type="email" name="email" required>
                 </label>
             </div>
             <div>
@@ -143,7 +145,7 @@
             </div>
             <div>
                 <label>Jūsu miļākā krāsa:
-                    <input type="color" name="fav_color">
+                    <input type="color" name="fav_color" disabled>
                 </label>
             </div>
             <div>
@@ -187,15 +189,34 @@
             </div>
             <div>
                 <label>
-                   Atkārtojiet savu jauno paroli
+                    Atkārtojiet savu jauno paroli
                     <input type="password" name="password_repeat" id="password_repeat">
                 </label>
             </div>
 
         </fieldset>
+        <fieldset>
+            <div>
+                <h5>Izvēlies savu miļāko auto marku:</h5>
+                <select name="fav_car" id="" multiple>
+                    <option value="">-</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="BMW" selected>BMW</option>
+                    <option value="Audi">Audi</option>
+                </select>
+            </div>
+            <div>
+                <label>
+                    Īsa biogrāfija:
+                    <textarea name="" id=""></textarea>
+                </label>
+            </div>
 
 
+        </fieldset>
 
+        <!-- <input type="submit" value="Reģistrēties"> -->
+        <button type="submit">Reģistrēties</button>
 
     </form>
 
