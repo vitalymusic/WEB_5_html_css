@@ -6,221 +6,256 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
 
+    <!-- <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+> -->
+
     <title>Mācos HTML</title>
 </head>
 
+
 <body id="top" style="background-color: rgb(168, 4, 239);">
-    <!-- Galvenie HTML Tagi -->
+    <header>
+        <h1>Galvenais virsraksts</h1>
+        <h2>apakšvirsraksts</h2>
+    </header>
+    <main>
+        <aside>
+            <h3>sānu panelis</h3>
+        </aside>
+        <section>
+            <!-- Galvenie HTML Tagi -->
 
-    <!-- Virsraksti -->
-    <h1 style="color:rgba(244, 220, 5, 0.977)">Mācos HTML 1</h1>
-    <h2>Mācos HTML</h2>
-    <h3>Mācos HTML</h3>
-    <h4>Mācos HTML</h4>
-    <h5>Mācos HTML</h5>
-    <h6>Mācos HTML</h6>
+            <!-- Virsraksti -->
+            <h1 style="color:rgba(244, 220, 5, 0.977)">Mācos HTML 1</h1>
+            <h2>Mācos HTML</h2>
+            <h3>Mācos HTML</h3>
+            <h4>Mācos HTML</h4>
+            <h5>Mācos HTML</h5>
+            <h6>Mācos HTML</h6>
 
-    <!-- Rindkopa -->
-    <p>Teksta rindkopa</p>
+            <!-- Rindkopa -->
+            <p>Teksta rindkopa</p>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dignissimos culpa vitae corrupti recusandae
-        nostrum hic ex possimus? Nemo at dolorem nam placeat? Quos possimus sapiente, earum veritatis nobis dolorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dignissimos culpa vitae corrupti
+                recusandae
+                nostrum hic ex possimus? Nemo at dolorem nam placeat? Quos possimus sapiente, earum veritatis nobis
+                dolorem.
+            </p>
 
-    <!-- Saraksti -->
-    <ul>
-        <li>Pirmais</li>
-        <li>Otrais</li>
-        <li>Trešais</li>
-        <li>Ceturtais</li>
-    </ul>
+            <!-- Saraksti -->
+            <ul>
+                <li>Pirmais</li>
+                <li>Otrais</li>
+                <li>Trešais</li>
+                <li>Ceturtais</li>
+            </ul>
 
-    <ol>
-        <li>Pirmais</li>
-        <li>Otrais</li>
-        <li>Trešais</li>
-        <li>Ceturtais</li>
-    </ol>
+            <ol>
+                <li>Pirmais</li>
+                <li>Otrais</li>
+                <li>Trešais</li>
+                <li>Ceturtais</li>
+            </ol>
 
-    <!-- Definīcijas un apraksta tegi -->
-    <dl>
-        <dt>Virsraksts</dt>
-        <dd>Apraksts</dd>
-        <dt>Virsraksts 2</dt>
-        <dd>Apraksts2 </dd>
-    </dl>
-
-
-    <!-- Detaļas  -->
-
-    <details>
-        <summary>Detaļas</summary>
-        Sīkāks apraksts par šo
-    </details>
-
-
-    <!-- Attēlu ievietošana atbalstāmie formāti (.png,.jpg,gif,webp,afif)-->
-
-    <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt="logotips" width="250">
-    <img src="./CSS3_logo_and_wordmark.svg.png" alt="logotips" width="250">
+            <!-- Definīcijas un apraksta tegi -->
+            <dl>
+                <dt>Virsraksts</dt>
+                <dd>Apraksts</dd>
+                <dt>Virsraksts 2</dt>
+                <dd>Apraksts2 </dd>
+            </dl>
 
 
-    <!-- Hipersaites (saites) -->
+            <!-- Detaļas  -->
 
-    <a href="https://facebook.com">
-        <img src="./CSS3_logo_and_wordmark.svg.png" alt="">
-    </a>
-
-    <a href="https://facebook.com" target="_blank">
-        Teksta hipersaite
-    </a>
-    <!-- Šī saite atvērsies jaunajā cilnē (lapā) -->
-
-    <a href="mailto:user@inbox.lv">
-        Uzrakstiet epastu mums!!!
-    </a>
-
-    <a href="tel:+3712222222">
-        Piezvanīt tūlīt
-    </a>
+            <details>
+                <summary>Detaļas</summary>
+                Sīkāks apraksts par šo
+            </details>
 
 
-    <a href="#top">
-        uz augšu
-    </a>
+            <!-- Attēlu ievietošana atbalstāmie formāti (.png,.jpg,gif,webp,afif)-->
+
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt="logotips" width="250">
+            <img src="./CSS3_logo_and_wordmark.svg.png" alt="logotips" width="250">
 
 
-    <h2>Tabulas</h2>
-    <table border="1" width="50%" style="background-color: white;">
-        <thead height="200px" style="background-color: aliceblue;">
-            <tr>
-                <td width="10%">N.p.k</td>
-                <td width="50%">Vārds, uzvārds</td>
-                <td width="">Epasts</td>
-                <td width="">Tālrunis</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="2">1.</td>
-                <td>Jānis Zariņš</td>
-                <td>
-                    <a href="mailto:zarins@inbox.lv">zarins@inbox.lv</a>
-                </td>
-                <td>+3712222222</td>
-            </tr>
-            <tr>
-                <!-- <td>2.</td> -->
-                <td>Anna Lapiņa</td>
-                <td>lapina@inbox.lv</td>
-                <td>+3713333333333</td>
-            </tr>
-        </tbody>
-        <tfoot height="100px" style="background-color: darkgrey;color:blue">
-            <tr>
-                <td colspan="4">Kopā lietotāju: 2 cilv.</td>
-            </tr>
-        </tfoot>
+            <!-- Hipersaites (saites) -->
 
-    </table>
+            <a href="https://facebook.com">
+                <img src="./CSS3_logo_and_wordmark.svg.png" alt="">
+            </a>
 
-    <h2>Formas</h2>
-    <form action="https://formtester.goodbytes.be/post.php" method="post" style="width:50%;margin: auto">
-        <fieldset>
-            <legend>Pamatdati par lietotāju</legend>
+            <a href="https://facebook.com" target="_blank">
+                Teksta hipersaite
+            </a>
+            <!-- Šī saite atvērsies jaunajā cilnē (lapā) -->
 
-            <div>
-                <label>Jūsu vārds:
-                    <input type="text" name="name" placeholder="Piem. Jānis" maxlength="10" minlength="3">
-                </label>
-            </div>
-            <div>
-                <label>Jūsu epasts:
-                    <input type="email" name="email" required>
-                </label>
-            </div>
-            <div>
-                <label>Jūsu dzimšanas datums:
-                    <input type="date" name="date">
-                </label>
-            </div>
-            <div>
-                <label>Jūsu miļākā krāsa:
-                    <input type="color" name="fav_color" disabled>
-                </label>
-            </div>
-            <div>
-                <label>Jūsu foto:
-                    <input type="file" name="avatar">
-                </label>
-            </div>
-            <div>
-                <label>
-                    <input type="checkbox" name="agree" value="true">
-                    Piekrītu lapas noteikumiem
-                </label>
-            </div>
-            <div>
-                <h3>Cik daudz laika jūs pavadāt pie datora dienā?</h3>
+            <a href="mailto:user@inbox.lv">
+                Uzrakstiet epastu mums!!!
+            </a>
 
-                <label>
-                    <input type="radio" name="jaut1" value="līdz 1 stundai">
-                    līdz 1 stundai
-                </label><br>
-                <label>
-                    <input type="radio" name="jaut1" value="2-3 stundas">
-                    2-3 stundas
-                </label><br>
-                <label>
-                    <input type="radio" name="jaut1" value="vairāk par 3 stundām">
-                    vairāk par 3 stundām
-                </label><br>
-
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Paroles izveide</legend>
-
-            <div>
-                <label>
-                    Ievadiet savu jauno paroli
-                    <input type="password" name="password" id="password">
-                </label>
-            </div>
-            <div>
-                <label>
-                    Atkārtojiet savu jauno paroli
-                    <input type="password" name="password_repeat" id="password_repeat">
-                </label>
-            </div>
-
-        </fieldset>
-        <fieldset>
-            <div>
-                <h5>Izvēlies savu miļāko auto marku:</h5>
-                <select name="fav_car" id="" multiple>
-                    <option value="">-</option>
-                    <option value="Mercedes">Mercedes</option>
-                    <option value="BMW" selected>BMW</option>
-                    <option value="Audi">Audi</option>
-                </select>
-            </div>
-            <div>
-                <label>
-                    Īsa biogrāfija:
-                    <textarea name="" id=""></textarea>
-                </label>
-            </div>
+            <a href="tel:+3712222222">
+                Piezvanīt tūlīt
+            </a>
 
 
-        </fieldset>
+            <a href="#top">
+                uz augšu
+            </a>
+        </section>
 
-        <!-- <input type="submit" value="Reģistrēties"> -->
-        <button type="submit">Reģistrēties</button>
-
-    </form>
+        <section>
 
 
+
+            <h2>Tabulas</h2>
+            <table width="50%" style="background-color: white;">
+                <thead height="200px" style="background-color: aliceblue;">
+                    <tr>
+                        <td width="10%">N.p.k</td>
+                        <td width="50%">Vārds, uzvārds</td>
+                        <td width="">Epasts</td>
+                        <td width="">Tālrunis</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">1.</td>
+                        <td>Jānis Zariņš</td>
+                        <td>
+                            <a href="mailto:zarins@inbox.lv">zarins@inbox.lv</a>
+                        </td>
+                        <td>+3712222222</td>
+                    </tr>
+                    <tr>
+                        <!-- <td>2.</td> -->
+                        <td>Anna Lapiņa</td>
+                        <td>lapina@inbox.lv</td>
+                        <td>+3713333333333</td>
+                    </tr>
+                </tbody>
+                <tfoot height="100px" style="background-color: darkgrey;color:blue">
+                    <tr>
+                        <td colspan="4">Kopā lietotāju: 2 cilv.</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </section>
+        <section>
+
+
+
+            <h2>Formas</h2>
+            <form action="https://formtester.goodbytes.be/post.php" method="post" style="width:50%;margin: auto">
+                <fieldset>
+                    <legend>Pamatdati par lietotāju</legend>
+
+                    <div>
+                        <label>Jūsu vārds:
+                            <input type="text" name="name" placeholder="Piem. Jānis" maxlength="10" minlength="3">
+                        </label>
+                    </div>
+                    <div>
+                        <label>Jūsu epasts:
+                            <input type="email" name="email" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Jūsu dzimšanas datums:
+                            <input type="date" name="date">
+                        </label>
+                    </div>
+                    <div>
+                        <label>Jūsu miļākā krāsa:
+                            <input type="color" name="fav_color" disabled>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Jūsu foto:
+                            <input type="file" name="avatar">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="agree" value="true">
+                            Piekrītu lapas noteikumiem
+                        </label>
+                    </div>
+                    <div>
+                        <h3>Cik daudz laika jūs pavadāt pie datora dienā?</h3>
+
+                        <label>
+                            <input type="radio" name="jaut1" value="līdz 1 stundai">
+                            līdz 1 stundai
+                        </label><br>
+                        <label>
+                            <input type="radio" name="jaut1" value="2-3 stundas">
+                            2-3 stundas
+                        </label><br>
+                        <label>
+                            <input type="radio" name="jaut1" value="vairāk par 3 stundām">
+                            vairāk par 3 stundām
+                        </label><br>
+
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Paroles izveide</legend>
+
+                    <div>
+                        <label>
+                            Ievadiet savu jauno paroli
+                            <input type="password" name="password" id="password">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Atkārtojiet savu jauno paroli
+                            <input type="password" name="password_repeat" id="password_repeat">
+                        </label>
+                    </div>
+
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <h4>Izvēlies savu miļāko auto marku:</h4>
+                        <select name="fav_car" id="fav_car" multiple>
+                            <option value="">-</option>
+                            <option value="Mercedes">Mercedes</option>
+                            <option value="BMW" selected>BMW</option>
+                            <option value="Audi">Audi</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>
+                            Īsa biogrāfija:
+                            <textarea name="bio" id="bio"></textarea>
+                        </label>
+                    </div>
+
+
+                </fieldset>
+
+                <!-- <input type="submit" value="Reģistrēties"> -->
+                <button type="submit">Reģistrēties</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <h5>Visas tiesības aizsargātas</h5>
+
+        <address>
+
+        </address>
+    </footer>
 
 
 
