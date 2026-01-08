@@ -17,12 +17,19 @@
         /* Iekšējais css */
 
         *{
-           padding: 5px; 
+           /* padding: 5px;  */
+        }
+
+         body{
+            font-family: "Source Sans Pro", "Arial", sans-serif;
+            font-size: 14pt;
+            margin:0px;padding:0px;
         }
 
         h1,h2{
             background-color: rgb(176, 102, 245);
             color:white !important;
+            text-shadow: 2px 4px 10px red;
         }
 
 
@@ -79,11 +86,46 @@
         header{
             background-color: #FFC15E;
 
+
+
+
+
             h1,h2{
                 background-color: transparent;
                 text-align: center;
                 color: #84513A !important;
+
+                width:50%;
+                margin:auto;
+                /* centrē bloka elementu uz lapas, ja tā platums ir mazāks par 100% */
+
             }
+
+
+            /* Box model (Bloku modelis) */
+
+             margin:100px;
+             margin-top:50px;
+             margin-bottom:30px;
+             margin: 30px 50px;
+
+             border: 5px solid black;
+             border-width: 6px;
+             border-style: dashed;
+             border-color: red;
+             outline: 5px solid yellow;
+
+
+              padding:100px;
+              padding-top:50px;
+              padding-bottom:30px;
+              padding: 30px 50px;
+
+              min-height:150px;
+              box-sizing: border-box;
+
+
+
 
         }
         main{
@@ -99,8 +141,40 @@
             background-color: rgb(30, 30, 30);
             color:white;
             height: 150px;
+
+            padding: 30px;
+            margin-top: 50px;
         }
 
+
+       section{
+        border-bottom:2px solid rgba(255, 255, 255, 0.351);
+        margin-bottom:50px;
+        padding-bottom:50px;
+
+        h1,h2{
+            padding: 0px 30px;
+        }
+
+       }
+
+
+       table{
+            width: 80%;
+            margin:auto;
+            border-collapse: collapse;
+            tr,th,td{
+                border:2px solid black;
+                padding: 10px;
+            }
+
+            thead{
+                height: auto;
+                text-align: center;
+                font-weight: bold;
+            }
+
+       }
 
 
 
