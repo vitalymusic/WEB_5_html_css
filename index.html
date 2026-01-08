@@ -16,87 +16,91 @@
     <style>
         /* Iekšējais css */
 
-        *{
-           /* padding: 5px;  */
+        * {
+            /* padding: 5px;  */
         }
 
-         body{
+        body {
             font-family: "Source Sans Pro", "Arial", sans-serif;
             font-size: 14pt;
-            margin:0px;padding:0px;
+            margin: 0px;
+            padding: 0px;
         }
 
-        h1,h2{
+        h1,
+        h2 {
             background-color: rgb(176, 102, 245);
-            color:white !important;
+            color: white !important;
             text-shadow: 2px 4px 10px red;
         }
 
 
 
         /* selektori */
-        h1,h2{
+        h1,
+        h2 {
             font-size: 3rem;
         }
 
 
 
-        header h1{
+        header h1 {
             text-align: center;
 
         }
 
-        section h1{
+        section h1 {
             text-align: right;
         }
 
-        section h2{
-             text-align: right;
+        section h2 {
+            text-align: right;
         }
 
 
         /* visiem attēliem uz lapas */
 
-        img{
+        img {
             width: 250px;
             height: 300px;
         }
 
 
         /* atlase pēc atribūta class */
-        img.logotips{
-            border:5px solid red;
+        img.logotips {
+            border: 5px solid red;
 
 
         }
 
-        img.saite{
-             border:5px solid rgb(30, 255, 0);
+        img.saite {
+            border: 5px solid rgb(30, 255, 0);
 
         }
 
 
-        input#vards{
-            border:2px solid rgb(204, 255, 0);
-            color:white;
+        input#vards {
+            border: 2px solid rgb(204, 255, 0);
+            color: white;
             background-color: rgb(44, 73, 74);
 
         }
 
-        header{
+        header {
             background-color: #FFC15E;
 
 
 
 
 
-            h1,h2{
+            h1,
+            h2 {
                 background-color: transparent;
                 text-align: center;
                 color: #84513A !important;
 
-                width:50%;
-                margin:auto;
+                width: 50%;
+                margin: auto;
                 /* centrē bloka elementu uz lapas, ja tā platums ir mazāks par 100% */
 
             }
@@ -104,79 +108,120 @@
 
             /* Box model (Bloku modelis) */
 
-             margin:100px;
-             margin-top:50px;
-             margin-bottom:30px;
-             margin: 30px 50px;
+            margin:100px;
+            margin-top:50px;
+            margin-bottom:30px;
+            margin: 30px 50px;
 
-             border: 5px solid black;
-             border-width: 6px;
-             border-style: dashed;
-             border-color: red;
-             outline: 5px solid yellow;
+            border: 5px solid black;
+            border-width: 6px;
+            border-style: dashed;
+            border-color: red;
+            outline: 5px solid yellow;
 
 
-              padding:100px;
-              padding-top:50px;
-              padding-bottom:30px;
-              padding: 30px 50px;
+            padding:100px;
+            padding-top:50px;
+            padding-bottom:30px;
+            padding: 30px 50px;
 
-              min-height:150px;
-              box-sizing: border-box;
+            min-height:150px;
+            box-sizing: border-box;
 
 
 
 
         }
-        main{
-            width:70%;
-            margin:auto;
+
+        main {
+            width: 70%;
+            margin: auto;
             background: #653e4260;
             padding: 30px;
 
         }
 
 
-        footer{
+        footer {
             background-color: rgb(30, 30, 30);
-            color:white;
+            color: white;
             height: 150px;
 
             padding: 30px;
             margin-top: 50px;
+
+
+             display:flex ;
+            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
+            gap:20px;
+
+
         }
 
 
-       section{
-        border-bottom:2px solid rgba(255, 255, 255, 0.351);
-        margin-bottom:50px;
-        padding-bottom:50px;
+        section {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.351);
+            margin-bottom: 50px;
+            padding-bottom: 50px;
 
-        h1,h2{
-            padding: 0px 30px;
+            h1,
+            h2 {
+                padding: 0px 30px;
+            }
+
         }
 
-       }
 
-
-       table{
+        table {
             width: 80%;
-            margin:auto;
+            margin: auto;
             border-collapse: collapse;
-            tr,th,td{
-                border:2px solid black;
+
+            tr,
+            th,
+            td {
+                border: 2px solid black;
                 padding: 10px;
             }
 
-            thead{
+            thead {
                 height: auto;
                 text-align: center;
                 font-weight: bold;
             }
 
-       }
+        }
 
 
+
+
+        .container{
+            display:flex ;
+            justify-content: space-around;
+            justify-content: center;
+            gap:20px;
+
+
+
+            .card{
+                 border:2px solid white;   
+                 background-color: rgba(255, 255, 255, 0.353);
+                 
+                    display:flex ;
+                    justify-content: space-around;
+                    justify-content: center;
+                    /* gap:20px; */
+                    flex-direction: column;
+                    align-items: center;
+
+
+            }
+
+
+
+        }
 
 
 
@@ -250,8 +295,8 @@
             <!-- Attēlu ievietošana atbalstāmie formāti (.png,.jpg,gif,webp,afif)-->
 
             <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt="logotips" width="250">
-            
-            
+
+
             <img src="./CSS3_logo_and_wordmark.svg.png" alt="logotips" width="250" class="logotips galvenais">
 
 
@@ -329,7 +374,8 @@
 
                     <div>
                         <label>Jūsu vārds:
-                            <input type="text" name="name" placeholder="Piem. Jānis" maxlength="10" minlength="3" id="vards">
+                            <input type="text" name="name" placeholder="Piem. Jānis" maxlength="10" minlength="3"
+                                id="vards">
                         </label>
                     </div>
                     <div>
@@ -430,11 +476,11 @@
                     <img src="" alt="">
                     <h5>Teksts 1</h5>
                 </div>
-                 <div class="card">
+                <div class="card">
                     <img src="" alt="">
                     <h5>Teksts 2</h5>
                 </div>
-                 <div class="card">
+                <div class="card">
                     <img src="" alt="">
                     <h5>Teksts 3</h5>
                 </div>
