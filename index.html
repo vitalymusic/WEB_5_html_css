@@ -4,12 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> -->
 
     <!-- <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
 > -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Iekšējais css */
+
+        *{
+           padding: 5px; 
+        }
+
+        h1,h2{
+            background-color: rgb(176, 102, 245);
+            color:white !important;
+        }
+
+
+
+        /* selektori */
+        h1,h2{
+            font-size: 3rem;
+        }
+
+
+
+        header h1{
+            text-align: center;
+
+        }
+
+        section h1{
+            text-align: right;
+        }
+
+        section h2{
+             text-align: right;
+        }
+
+
+        /* visiem attēliem uz lapas */
+
+        img{
+            width: 250px;
+            height: 300px;
+        }
+
+
+        /* atlase pēc atribūta class */
+        img.logotips{
+            border:5px solid red;
+
+
+        }
+
+        img.saite{
+             border:5px solid rgb(30, 255, 0);
+
+        }
+
+
+        input#vards{
+            border:2px solid rgb(204, 255, 0);
+            color:white;
+            background-color: rgb(44, 73, 74);
+
+        }
+
+        header{
+            background-color: #FFC15E;
+
+            h1,h2{
+                background-color: transparent;
+                text-align: center;
+                color: #84513A !important;
+            }
+
+        }
+        main{
+            width:70%;
+            margin:auto;
+            background: #653e4260;
+            padding: 30px;
+
+        }
+
+
+        footer{
+            background-color: rgb(30, 30, 30);
+            color:white;
+            height: 150px;
+        }
+
+
+
+
+
+
+    </style>
 
     <title>Mācos HTML</title>
 </head>
@@ -79,13 +176,15 @@
             <!-- Attēlu ievietošana atbalstāmie formāti (.png,.jpg,gif,webp,afif)-->
 
             <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt="logotips" width="250">
-            <img src="./CSS3_logo_and_wordmark.svg.png" alt="logotips" width="250">
+            
+            
+            <img src="./CSS3_logo_and_wordmark.svg.png" alt="logotips" width="250" class="logotips galvenais">
 
 
             <!-- Hipersaites (saites) -->
 
             <a href="https://facebook.com">
-                <img src="./CSS3_logo_and_wordmark.svg.png" alt="">
+                <img src="./CSS3_logo_and_wordmark.svg.png" alt="" class="saite">
             </a>
 
             <a href="https://facebook.com" target="_blank">
@@ -156,7 +255,7 @@
 
                     <div>
                         <label>Jūsu vārds:
-                            <input type="text" name="name" placeholder="Piem. Jānis" maxlength="10" minlength="3">
+                            <input type="text" name="name" placeholder="Piem. Jānis" maxlength="10" minlength="3" id="vards">
                         </label>
                     </div>
                     <div>
