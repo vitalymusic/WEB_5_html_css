@@ -7,6 +7,9 @@
 
 
     <style>
+        body{
+            height:5000px;
+        }
         div{
             background-color: burlywood;
             margin: 20px;
@@ -14,18 +17,42 @@
         }
 
         .div1{
-
+            position: static; 
         }
 
         .div2{
-
+            position: relative;
+            background-color: aqua;
+            top:-50px;
+            left:50px;
+            z-index: 1;
         }
         .div3{
-
+             background-color: rgb(255, 0, 191);
+            position: absolute;
+            top:0px;
+            right:0px;
+            width: 300px;
+            height:300px;
+            z-index: 50;
         }
 
         .div4{
+             background-color: rgb(219, 244, 242);
+            position: fixed;
+            bottom:0px;
+            right:0px;
+            width: 300px;
+            height:300px;
+            z-index: 50;
+        }
 
+
+        .div5{
+            background-color: blue;
+            position: sticky;
+            top:0px;
+            z-index: 1000;
         }
     </style>
 </head>
@@ -35,6 +62,7 @@
     <div class="div2">Otrais</div>
     <div class="div3">Trešais</div>
     <div class="div4">Ceturtais</div>
+    <div class="div5">Piektais</div>
 
 </body>
 </html>
