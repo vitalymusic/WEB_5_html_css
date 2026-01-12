@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+
+
+    <style>
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+
+        .div1 {
+            grid-area: 1 / 1 / 2 / 6;
+            background-color: aliceblue;
+        }
+
+        .div2 {
+            grid-area: 3 / 1 / 6 / 2;
+            background-color: rgb(56, 227, 96);
+        }
+
+        .div3 {
+            grid-area: 3 / 3 / 6 / 6;
+            background-color: aliceblue;
+        }
+
+        .div4 {
+            grid-area: 7 / 1 / 8 / 6;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS GRID</h1>
+    <div class="parent">
+        <div class="div1"> </div>
+        <div class="div2"> </div>
+        <div class="div3"> </div>
+        <div class="div4"> </div>
+    </div>
+
+
+</body>
+
+</html>
