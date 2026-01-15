@@ -10,6 +10,7 @@
     --nav-hover-color:rgba(111, 0, 169, 1);
 
     --button-background:rgba(111, 0, 169, 1);
+    --button-background-hover:rgb(75, 1, 114);
     --text-block-background:rgba(111, 0, 169, 1);
     --gradient-border:linear-gradient(90deg,
                             rgba(255, 0, 0, 1),
@@ -191,8 +192,6 @@ header{
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                gap: 10;
-                padding: 15px 60px 15px 60px;
                 background: var(--button-background);
 
 
@@ -209,6 +208,13 @@ header{
                 text-align: center;
                 text-transform: uppercase;
 
+                border:none;
+                cursor: pointer;
+
+
+                &:hover{
+                    background: var(--button-background-hover);
+                }
             }
 
         }
