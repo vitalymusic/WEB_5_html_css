@@ -1,3 +1,7 @@
+/* Šriftu imports no Google */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+
 :root{
     /* Krāsas */
     --main-background:rgb(0, 0, 0);
@@ -19,7 +23,6 @@
     --small-text-font:Exo;
     --big-text-font:Exo;
     --button-text-font:Orbitron;
-
 
 
 }
