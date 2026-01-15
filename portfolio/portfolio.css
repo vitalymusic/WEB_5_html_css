@@ -2,37 +2,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
 
 
-:root{
+:root {
     /* Krāsas */
-    --main-background:rgb(0, 0, 0);
-    --secondary-background:rgba(33, 33, 33, 1);
-    --text-color:rgba(255, 255, 255, 1);
-    --nav-hover-color:rgba(111, 0, 169, 1);
+    --main-background: rgb(0, 0, 0);
+    --secondary-background: rgba(33, 33, 33, 1);
+    --text-color: rgba(255, 255, 255, 1);
+    --nav-hover-color: rgba(111, 0, 169, 1);
 
-    --button-background:rgba(111, 0, 169, 1);
-    --button-background-hover:rgb(75, 1, 114);
-    --text-block-background:rgba(111, 0, 169, 1);
-    --gradient-border:linear-gradient(90deg,
-                            rgba(255, 0, 0, 1),
-                            rgba(66, 255, 0, 1),
-                            rgba(36, 0, 255, 1));
+    --button-background: rgba(111, 0, 169, 1);
+    --button-background-hover: rgb(75, 1, 114);
+    --text-block-background: rgba(111, 0, 169, 1);
+    --gradient-border: linear-gradient(90deg,
+            rgba(255, 0, 0, 1),
+            rgba(66, 255, 0, 1),
+            rgba(36, 0, 255, 1));
 
 
 
 
     /* fonti */
-    --logo-font:Exo 2;
-    --nav-font:Orbitron;
-    --small-text-font:Exo;
-    --big-text-font:Exo;
-    --button-text-font:Orbitron;
+    --logo-font: Exo 2;
+    --nav-font: Orbitron;
+    --small-text-font: Exo;
+    --big-text-font: Exo;
+    --button-text-font: Orbitron;
 
 
 }
 
 /* var(--mainiga-nosaukums) */
 
-body{
+body {
     background: var(--main-background);
     padding: 0;
     margin: 0;
@@ -54,29 +54,34 @@ body{
 
 /* Virsrakstu Margin noņemšana */
 
-h1,h2,h3,h4,h5,p{
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
     margin: 0px;
     padding: 0px;
 }
 
 
-header{
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     min-height: 130px;
 
-    nav{
+    nav {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         min-width: 795px;
 
-        a{
+        a {
             text-decoration: none;
-            color:var(--text-color);
+            color: var(--text-color);
             font-family: var(--nav-font);
             font-size: 16px;
             font-weight: 500;
@@ -85,31 +90,31 @@ header{
             text-align: left;
             text-transform: uppercase;
 
-            &:hover{
-                color:var(--nav-hover-color);
+            &:hover {
+                color: var(--nav-hover-color);
             }
 
         }
-       
 
 
-        .social{
-           img:hover{
-             /* background: var(--nav-hover-color); */
-        } 
+
+        .social {
+            img:hover {
+                /* background: var(--nav-hover-color); */
+            }
 
         }
     }
 
-    .logo{
-        color:var(--text-color);
+    .logo {
+        color: var(--text-color);
         font-family: var(--logo-font);
         font-style: normal;
         font-size: 30px;
         font-weight: 400;
         line-height: 20px;
         letter-spacing: -10%;
-        text-align: left;     
+        text-align: left;
     }
 
 
@@ -117,144 +122,201 @@ header{
 }
 
 
-#hero{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        min-height: 600px;
+#hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 600px;
 
-        .hero_left{
+    .hero_left {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: start;
 
 
-            h5{
-                /* color: rgba(255, 255, 255, 1); */
-                font-family: Exo;
-                font-style: Regular;
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 20px;
-                letter-spacing: -2%;
-                text-align: left;
-                text-transform: uppercase;
-            }
-
-            .line{
-                width: 152px;
-                height: 1px;
-                /* position: relative;
-                top:-10px; */
-
-                margin:10px 0px;
-
-                background-image:linear-gradient(90deg,
-                            rgba(255, 0, 0, 1),
-                            rgba(66, 255, 0, 1),
-                            rgba(36, 0, 255, 1));
-            }
-
-            h1{
-                max-width: 584px;
-                color: rgba(255, 255, 255, 1);
-
-                font-family: Exo;
-                
-                font-size: 80px;
-                font-weight: 700;
-                line-height: 70px;
-                text-align: left;
-                text-transform: uppercase;
-            }
-
-            p{
-
-                color: rgba(255, 255, 255, 1);
-                font-family: Exo;
-                
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 40px;
-                letter-spacing: -0.2px;
-                text-align: left;
-                text-transform: capitalize;
-
-                margin:20px 0px;
-            }
-
-            button{
-                /* CTA Button */
-                width: 253px;
-                height: 50px;
-                /* Auto layout */
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                background: var(--button-background);
-
-
-                /* pogas teksts */
-
-                color: rgba(255, 255, 255, 1);
-
-                font-family: var( --button-text-font);
-               
-                font-size: 20px;
-                font-weight: 900;
-                line-height: 20px;
-                
-                text-align: center;
-                text-transform: uppercase;
-
-                border:none;
-                cursor: pointer;
-
-
-                &:hover{
-                    background: var(--button-background-hover);
-                }
-            }
-
+        h5 {
+            /* color: rgba(255, 255, 255, 1); */
+            font-family: Exo;
+            font-style: Regular;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: -2%;
+            text-align: left;
+            text-transform: uppercase;
         }
 
-        .hero_right{
 
 
-             img{
+        h1 {
+            max-width: 584px;
+            color: rgba(255, 255, 255, 1);
+
+            font-family: Exo;
+
+            font-size: 80px;
+            font-weight: 700;
+            line-height: 70px;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        .line {
+            width: 152px;
+        }
+
+        p {
+
+            color: rgba(255, 255, 255, 1);
+            font-family: Exo;
+
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: -0.2px;
+            text-align: left;
+            text-transform: capitalize;
+
+            margin: 20px 0px;
+        }
+
+        button {
+            /* CTA Button */
+            width: 253px;
+            height: 50px;
+            /* Auto layout */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background: var(--button-background);
+
+
+            /* pogas teksts */
+
+            color: rgba(255, 255, 255, 1);
+
+            font-family: var(--button-text-font);
+
+            font-size: 20px;
+            font-weight: 900;
+            line-height: 20px;
+
+            text-align: center;
+            text-transform: uppercase;
+
+            border: none;
+            cursor: pointer;
+
+
+            &:hover {
+                background: var(--button-background-hover);
+            }
+        }
+
+    }
+
+    .hero_right {
+
+
+        img {
             /* Hero Image */
             max-width: 688px;
             height: 508px;
-            }
-
         }
 
-        
+    }
 
-       
+
+
+
 
 }
 
 
-#about{
+#about {
     min-height: 555px;
-    background:  url('./img/About_section2.webp');
+    background: url('./img/About_section2.webp');
 
-    h2{
+    h2 {
+        /* width: 401px; */
+        color: rgba(255, 255, 255, 1);
+        font-family: Exo;
+        font-style: Bold;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 70px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
 
     }
 
-    .line{
-
+    .line {
+        margin: 10px auto;
+        width: 401px;
     }
-    p{
 
+    p {
+        width: 992px;
+        margin: 20px auto;
+        color: rgba(255, 255, 255, 1);
+
+        font-family: Exo;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: center;
+        text-transform: capitalize;
     }
+
+
+   ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    max-width: 1150px;
+    margin: 10px auto;
+   } 
+
+   li{
+        color: rgba(255, 255, 255, 1);
+        font-family: Orbitron;
+        font-style: Medium;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: capitalize;
+
+
+   }
+
+   li::after{
+        content:"";
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: url('./img/icons/Ellipse_3.svg');
+
+   }
 
 
 
 }
 
+.line {
+
+    height: 1px;
+    /* position: relative;
+                top:-10px; */
+    margin: 10px 0px;
+    background-image: linear-gradient(90deg,
+            rgba(255, 0, 0, 1),
+            rgba(66, 255, 0, 1),
+            rgba(36, 0, 255, 1));
+}
