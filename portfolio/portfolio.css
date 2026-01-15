@@ -1,4 +1,25 @@
 :root{
-    
+    /* Krāsas */
+    --main-background:rgb(0, 0, 0);
+    --secondary-background:rgba(33, 33, 33, 1);
+    --text-color:rgba(255, 255, 255, 1);
+    --button-background:rgba(111, 0, 169, 1);
+    --text-block-background:rgba(111, 0, 169, 1);
+    --line-border:1px solid linear-gradient(
+                            rgba(255, 0, 0, 1)
+                            rgba(66, 255, 0, 1)
+                            rgba(36, 0, 255, 1));
+
+
+
+
+    /* fonti */
+    --logo-font:Exo 2;
+    --nav-font:Orbitron;
+    --small-text-font:Exo;
+    --big-text-font:Exo;
+    --button-text-font:Orbitron;
+
+
 
 }
