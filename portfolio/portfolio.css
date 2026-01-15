@@ -85,10 +85,12 @@ header{
             text-align: left;
             text-transform: uppercase;
 
+            &:hover{
+                color:var(--nav-hover-color);
+            }
+
         }
-        a:hover{
-            color:var(--nav-hover-color);
-        }
+       
 
 
         .social{
@@ -233,6 +235,26 @@ header{
         
 
        
+
+}
+
+
+#about{
+    min-height: 555px;
+    background:  url('./img/About_section2.webp');
+
+    h2{
+
+    }
+
+    .line{
+
+    }
+    p{
+
+    }
+
+
 
 }
 
