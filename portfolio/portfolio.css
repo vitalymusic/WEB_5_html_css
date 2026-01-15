@@ -7,6 +7,8 @@
     --main-background:rgb(0, 0, 0);
     --secondary-background:rgba(33, 33, 33, 1);
     --text-color:rgba(255, 255, 255, 1);
+    --nav-hover-color:rgba(111, 0, 169, 1);
+
     --button-background:rgba(111, 0, 169, 1);
     --text-block-background:rgba(111, 0, 169, 1);
     --line-border:1px solid linear-gradient(
@@ -23,6 +25,82 @@
     --small-text-font:Exo;
     --big-text-font:Exo;
     --button-text-font:Orbitron;
+
+
+}
+
+/* var(--mainiga-nosaukums) */
+
+body{
+    background: var(--main-background);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    color: rgba(255, 255, 255, 1);
+
+    font-family: var(--small-text-font);
+    font-style: Regular;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -2%;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 130px;
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        min-width: 795px;
+
+        a{
+            text-decoration: none;
+            color:var(--text-color);
+            font-family: var(--nav-font);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0%;
+            text-align: left;
+            text-transform: uppercase;
+
+        }
+        a:hover{
+            color:var(--nav-hover-color);
+        }
+
+
+        .social{
+           img:hover{
+             /* background: var(--nav-hover-color); */
+        } 
+
+        }
+    }
+
+    .logo{
+        color:var(--text-color);
+        font-family: var(--logo-font);
+        font-style: normal;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -10%;
+        text-align: left;     
+    }
+
 
 
 }
